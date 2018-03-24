@@ -1,7 +1,7 @@
-# IoT C++ SDK TESTS
+# Algorithms Tests
 
 ## Overview
-Tests contain unit tests to verify the functionality of SDK.
+Tests contain unit tests to verify the algorithms
 
 ## Build Tests
 Follow the instructions given in [README](../README.md#Installation) to build tests. Tests require cmake option `-DBUILD_TESTS` to be set to 1.

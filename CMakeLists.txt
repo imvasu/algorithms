@@ -8,10 +8,9 @@ project(algorithms)
 set (CMAKE_CXX_STANDARD 98)
 
 #####################################
-# Build Targets sdk, sample and tests
+# Build Targets solutions, sample and tests
 #####################################
-add_subdirectory(sdk)
-#add_subdirectory(sample)
+add_subdirectory(solutions)
 
 # To build tests, add option flag -DBUILD_TESTS=1 to cmake command
 set(BUILD_TESTS, 0)

@@ -29,9 +29,9 @@ set (CGREEN_LINK_LIBS cgreen)
 ##########################################
 # Include Directories
 ##########################################
-link_directories (${CMAKE_BINARY_DIR}/sdk/lib ${CMAKE_BINARY_DIR}/cgreen/src/build/src)
+link_directories (${CMAKE_BINARY_DIR}/solutions/lib ${CMAKE_BINARY_DIR}/cgreen/src/build/src)
 
-include_directories(${CMAKE_SOURCE_DIR}/sdk/include ${CMAKE_SOURCE_DIR}/sdk/src
+include_directories(${CMAKE_SOURCE_DIR}/solutions/include ${CMAKE_SOURCE_DIR}/solutions/src
 ${CMAKE_BINARY_DIR}/cgreen/src/include)
 
 file(GLOB SOURCES "src/*.cpp")
