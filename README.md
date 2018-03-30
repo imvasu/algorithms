@@ -47,7 +47,7 @@ SDK can be built on other platforms as long the compiler has support for ISO C++
 
 Below are the targets that can be built using this repository.
 
-* `algorithms` -  SDK is built as a library(libappdynamicsiot) by default. The library and headers can be found in lib/ and include/ directories created when this target is built.
+* `algorithms`
 * `tests` - Tests are built as executable linking cgreen library.
 
 
@@ -56,8 +56,8 @@ Below are the targets that can be built using this repository.
 All the targets can be built from root directory using the below commands.
 
 ```sh
-$ git clone https://github.com/Appdynamics/iot-cpp-sdk.git
-$ cd iot-cpp-sdk
+$ git clone https://github.com/imvasu/algorithms.git
+$ cd algorithms
 $ mkdir build
 $ cd build
 $ cmake ..
@@ -76,8 +76,7 @@ $ make
 You can also build individual targets using below commands
 
 ```sh
-$ make appdynamicsiotsdk
-$ make sample
+$ make algorithms
 $ make tests
 ```
 

@@ -23,7 +23,7 @@ execute_process(COMMAND make WORKING_DIRECTORY "${CMAKE_BINARY_DIR}/cgreen/src")
 ##########################################
 # Build Settings
 ##########################################
-set (APPD_SDK_LINK_LIBS algorithms)
+set (ALGORITHMS_LINK_LIBS algorithms)
 set (CGREEN_LINK_LIBS cgreen)
 
 ##########################################
@@ -45,7 +45,7 @@ add_executable(tests ${SOURCES})
 
 add_dependencies(tests algorithms)
 
-target_link_libraries(tests ${APPD_SDK_LINK_LIBS} ${CGREEN_LINK_LIBS})
+target_link_libraries(tests ${ALGORITHMS_LINK_LIBS} ${CGREEN_LINK_LIBS})
 
 add_custom_target(run-tests COMMAND ./tests)
 

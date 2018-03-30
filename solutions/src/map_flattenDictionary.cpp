@@ -12,11 +12,11 @@
 
 void flattenDictionaryHelper(string key, value v, map<string, string> *out)
 {
-   if(v.data_type == DATA_PRIMITIVE)
-   {
+  if(v.data_type == DATA_PRIMITIVE)
+  {
      string data_str = (char*)v.data;
      (*out)[key] = data_str;
-   }
+  }
   else
   {
     map<string, value> *v1 = (map<string, value> *)v.data;

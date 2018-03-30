@@ -85,6 +85,7 @@ int coinChange(vector<int>& coins, int amount) {
     return 0;
 
   int ncoins[amount+1];
+
   memset(&ncoins, -1, sizeof(ncoins));
   ncoins[0] = 0;
 
@@ -110,7 +111,7 @@ int coinChange(vector<int>& coins, int amount) {
 
 int main()
 {
-  int c[] = {186,419,83,408};
+  int c[4] = {186,419,83,408};
   int amount = 6249;
   vector<int>coins(c,c+sizeof(c)/sizeof(c[0]));
   cout << coinChange(coins, amount) << endl;
